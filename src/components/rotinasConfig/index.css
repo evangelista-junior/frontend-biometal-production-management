@@ -1,0 +1,120 @@
+.campo--config{
+  margin: 16px 8px;
+  width: 100%;
+}
+
+.campo--config h1{
+  padding: 16px 0 0 50pxpx;
+  font-size: 40px;
+}
+
+.campo--config h3,
+.campo--config h4{
+  color: #878787;
+  width: 100%;
+}
+
+
+.campo--config h1{
+  text-align: center;
+  color: #264653;
+}
+
+.campo--config h3{
+  color: #F58634;
+}
+
+.rotinasConfig {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;;
+}
+
+.campo--configSingle{
+  width: 312px;
+  margin: 8px;
+  padding: 8px;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  display:flex;
+  justify-content: center;;
+  flex-wrap: wrap;
+  box-shadow: -8px 10px 10px #dbdbdb;
+}
+
+.expediente--configs,
+.tempoEspera--configs{
+  width: 100%;
+  display: flex;
+  padding: 4px 0;
+}
+
+.parametros--hora{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.parametros--hora p{
+  padding: 8px;
+  color: #878787;
+  font-size: 14px;
+}
+
+
+.parametros--hora input{
+  width: 76px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #F58634;
+  border-radius: 5px;
+  color: #878787;
+}
+
+.tempoEspera--configs > .parametros--hora > input {
+  width: 66%;
+}
+
+.campo--configButtons{
+  width: 30%;
+  padding: 0 8px;
+  display: flex;
+  justify-content: right;
+}
+
+.configButton--updateProcess,
+.configButton--deleteProcess{
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+.configButton--updateProcess a img,
+.configButton--deleteProcess a img{
+  width: 14px;
+}
+
+.configButton--updateProcess{
+  background-color: #3481F5;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.configButton--updateProcess:hover{
+  background-color: #204f97;
+}
+
+.configButton--deleteProcess{
+  background-color: #F53434;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.configButton--deleteProcess:hover{
+  background-color: #791a1a;
+}

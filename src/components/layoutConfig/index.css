@@ -1,0 +1,183 @@
+.layout--configs{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.layout--configs > p{
+  margin: 10px 0;
+  background-color: green;
+  width: 150px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: lighter;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+.campo--config > p:hover{
+  background-color: rgb(74, 138, 74);
+  color: white;
+  font-weight: lighter;
+  font-weight: bold;
+}
+
+.layoutConfig {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;;
+}
+
+.modalCriarNovoLayout{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.formCriarNovoLayout{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 80%;
+  height: 475px;
+  max-width: 600px;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.formCriarNovoLayout h2{
+  color: #264653;
+  font-weight: lighter;
+}
+
+.layoutParams,
+.layoutRotinasAdicionadas{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.layoutRotinasAdicionadas{
+  overflow-y: scroll;;
+  max-height: 320px;
+}
+
+.layoutParams input{
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.layoutParams input,
+.layoutParams select,
+.layoutParams p,
+.formCriarNovoLayout input[type="submit"]{
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid #b9b9b9;
+  border-radius: 5px;
+  margin-right: 2px;
+}
+
+.layoutParams select{
+ width: 88%; 
+}
+
+.layoutParams p,
+.rotinaAdicionadaSingle .removeButtonNovoLayout{
+  width: 10%;
+  color: white;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.layoutParams p{
+  background-color: green;
+}
+
+.layoutParams p:hover{
+  background-color: rgb(74, 138, 74);
+  color: white;
+  font-weight: bold;
+}
+
+.rotinaAdicionadaSingle{
+  display:flex;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border-top: 1px solid #ccc;
+}
+
+.rotinaAdicionadaSingle .codRotinaNovoLayout{
+  width: 10%;
+}
+
+.rotinaAdicionadaSingle .descRotinaNovoLayout{
+  width: 80%;
+  text-align: left;
+}
+
+.rotinaAdicionadaSingle .removeButtonNovoLayout{
+  background-color: red;
+  border: 1px solid #b9b9b9;
+  border-radius: 5px;
+}
+
+.formCriarNovoLayout .cadastrar--novoLayout{
+  position: fixed;
+  background-color: #F58634;
+  width: 100%;
+  color: white;
+  font-weight: lighter;
+  font-size: 18px;
+  cursor: pointer;
+  bottom: 0;
+  left: 0px;
+  border-radius: 5px;
+}
+
+.formCriarNovoLayout .cadastrar--novoLayout:hover{
+  background-color: #7e4c28;
+  font-weight: bold;
+}
+
+.layout--single {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.layout--single > h3{
+  width: calc(100% - 29px);
+  margin-bottom: 5px;
+}
+
+.layout--single > p{
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+  color: #a3a3a3;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+
+.rotinas--alocadas{
+  width: 100%;
+  transition: 2s;
+}
+
+.rotinas--alocadas p{
+  font-size: 14px;
+}
