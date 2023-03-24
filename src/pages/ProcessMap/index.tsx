@@ -95,6 +95,15 @@ const ProcessMap = () => {
   }, []);
 
   useEffect(() => {
+    setInterval(() => {
+      let newDateUpdate = new Date();
+      if (updateMapProcess !== newDateUpdate) {
+        setUpdateMapProcess(newDateUpdate);
+      }
+    }, 90000);
+  });
+
+  useEffect(() => {
     const updateMapProcess = async () => {
       await Api.getOrdersPerProcess(weekYearTarget).then((res) => {
         setListOrders(res);
@@ -107,15 +116,6 @@ const ProcessMap = () => {
     };
     updateMapProcess();
   }, [updateMapProcess]);
-
-  useEffect(() => {
-    setInterval(() => {
-      let newDateUpdate = new Date();
-      if (updateMapProcess !== newDateUpdate) {
-        setUpdateMapProcess(newDateUpdate);
-      }
-    }, 90000);
-  });
 
   const handleChangeLayout = (e: React.ChangeEvent<HTMLSelectElement>) => {
     let layoutSelected = e.currentTarget.value;
