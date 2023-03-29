@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div``;
 
 export const CardRowContainer = styled.div`
-  margin-left: 8px;
+  padding-left: 8px;
   margin-bottom: 8px;
   border-bottom: 1px solid #bbb;
   box-shadow: 0 0 5px #ccc;

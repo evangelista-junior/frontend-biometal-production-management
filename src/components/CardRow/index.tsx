@@ -1,6 +1,4 @@
 import * as C from './styles';
-import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { CardSingle } from '../CardSingle';
 import { opInformationType } from '../../pages/ProcessMap';
 import { useEffect, useState } from 'react';

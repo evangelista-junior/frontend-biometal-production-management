@@ -9,37 +9,36 @@ import ProcessMap from './pages/ProcessMap';
 import { RequireAuth } from './contexts/Auth/RequireAuth';
 import Footer from './components/FooterApp';
 import { OrderSummary } from './pages/OrderSummary';
+import { VisualizationLayouts } from './pages/VisualizationLayouts';
+import { TimeSettings } from './pages/TimeSettings/indext';
 
 export const App = () => {
-  return (
-    <div className="App">
-      <Header />
+    return (
+        <div className="App">
+            <Header />
 
-      <Routes>
-        <Route path="/" element={<PainelProcessos />} />
-        <Route path="/esterilizacoes" element={<PainelEsterilizacoes />} />
-        <Route path="/resume-orders" element={<ResumoOrdensSemanas />} />
-        <Route
-          path="/configuration"
-          element={
-            <RequireAuth>
-              <Configuracoes />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="/layouts"
-          element={
-            <RequireAuth>
-              <Configuracoes />
-            </RequireAuth>
-          }
-        />
-        <Route path="/process-map" element={<ProcessMap />} />
-        <Route path="/order-summary-by-week" element={<OrderSummary />} />
-      </Routes>
-
-      <Footer />
-    </div>
-  );
+            <Routes>
+                <Route path="/" element={<ProcessMap />} />
+                <Route path="/process-map" element={<ProcessMap />} />
+                <Route path="/order-summary-by-week" element={<OrderSummary />} />
+                <Route
+                    path="/work-settings"
+                    element={
+                        <RequireAuth>
+                            <TimeSettings />
+                        </RequireAuth>
+                    }
+                />
+                <Route
+                    path="/layouts"
+                    element={
+                        <RequireAuth>
+                            <VisualizationLayouts />
+                        </RequireAuth>
+                    }
+                />
+            </Routes>
+            <Footer />
+        </div>
+    );
 };
