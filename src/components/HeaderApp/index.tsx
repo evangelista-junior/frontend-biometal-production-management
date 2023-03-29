@@ -18,7 +18,7 @@ function Header() {
         <C.Container>
             <Center>
                 <C.Label>
-                    <C.NavBarLink to="/process-map">
+                    <C.NavBarLink to="/">
                         <C.Image src={logo} />
                     </C.NavBarLink>
                 </C.Label>

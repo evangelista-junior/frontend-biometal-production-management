@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/HeaderApp';
 
-import PainelProcessos from './pages/painelProcessos';
-import PainelEsterilizacoes from './pages/painelEsterilizacoes';
-import Configuracoes from './pages/configuracoes';
-import ResumoOrdensSemanas from './pages/resumoOrdensSemanas';
+// import PainelProcessos from './pages/painelProcessos'; <-- deprecated
+// import PainelEsterilizacoes from './pages/painelEsterilizacoes'; <-- deprecated
+// import Configuracoes from './pages/configuracoes'; <-- deprecated
+// import ResumoOrdensSemanas from './pages/resumoOrdensSemanas'; <-- deprecated
 import ProcessMap from './pages/ProcessMap';
 import { RequireAuth } from './contexts/Auth/RequireAuth';
 import Footer from './components/FooterApp';
