@@ -94,4 +94,20 @@ export const useApi = () => ({
         );
         return response.data;
     },
+    getUsers: async () => {
+        const response = await Api.get('/api/v1/mobile/users');
+        return response.data;
+    },
+    createUser: async (postData: {}) => {
+        const response = await Api.post(`/api/v1/mobile/users`, postData);
+        return response.data;
+    },
+    getAvailableUsers: async () => {
+        const response = await Api.get('/api/v1/mobile/available-users');
+        return response.data;
+    },
+    deleteUser: async (user: string) => {
+        const response = await Api.delete(`/api/v1/mobile/users/${user}`);
+        return response.data;
+    },
 });

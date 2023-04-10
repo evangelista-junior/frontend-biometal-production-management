@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-export const LayoutsContainer = styled.div`
+export const UsersContainer = styled.div`
     padding: 8px;
 `;
 
-export const ButtonNewLayout = styled.button`
+export const ButtonNewUser = styled.button`
     background-color: green;
     border-radius: 5px;
     padding: 8px;
@@ -22,15 +22,15 @@ export const ButtonNewLayout = styled.button`
     }
 `;
 
-export const ListLayouts = styled.div`
+export const ListUsers = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 `;
 
-export const LayoutSingle = styled.div`
+export const UserSingle = styled.div`
     width: 49%;
-    max-width: 300px;
+    max-width: 400px;
     margin-bottom: 8px;
     margin-right: 8px;
     padding: 4px 8px;

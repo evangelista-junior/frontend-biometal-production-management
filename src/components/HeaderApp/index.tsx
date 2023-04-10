@@ -29,7 +29,8 @@ function Header() {
                         ordens de produção
                     </C.NavBarLink>
                     <C.NavBarLink to="/layouts">layouts</C.NavBarLink>
-                    <C.NavBarLink to="/work-settings">configurações</C.NavBarLink>
+                    <C.NavBarLink to="/time-settings">configurações</C.NavBarLink>
+                    <C.NavBarLink to="/user-settings">usuários</C.NavBarLink>
                 </C.Label>
 
                 {auth.user ? (
