@@ -30,7 +30,7 @@ export const VisualizationLayouts = () => {
     const handleModalDelete = (e: MouseEvent<HTMLButtonElement>) => {
         handleDisplayDeleteModal();
         let parentElement = e.currentTarget.parentNode?.parentNode as HTMLElement;
-        let layout = parentElement.id.replace(' ', '_');
+        let layout = parentElement.id.replace(' ', '_-_');
         setLayoutToDelete(layout);
     };
 
