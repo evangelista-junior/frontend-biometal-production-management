@@ -16,3 +16,6 @@ I divide the front end in basically four parts:
 
 You can check the video of this project concluded in the link bellow:<br/>
 https://www.youtube.com/watch?v=LZspp8vNqSs
+
+Backend repositorie:<br/>
+https://github.com/evangelista-junior/backend-biometal-production-management
