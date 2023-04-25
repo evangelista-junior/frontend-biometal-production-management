@@ -14,5 +14,5 @@ I divide the front end in basically four parts:
 
 5 - <b>Mobile Users :</b> It was requested a mobile version for the machine operators, that to each one of them could see available orders in the process that they execute. So we create the mobile app, and in this page we can registrate the users (from a previous registe in ERP system) with all processes the user be available to work.
 
-You can check the video of this project concluded in the link bellow:
+You can check the video of this project concluded in the link bellow:<br/>
 https://www.youtube.com/watch?v=LZspp8vNqSs
